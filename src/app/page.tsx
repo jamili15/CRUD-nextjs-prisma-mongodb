@@ -2,7 +2,7 @@ import AddTodo from "@/components/todos/AddTodo";
 import Todo from "@/components/todos/Todo";
 import prisma from "@/lib/db";
 
-async function getData() {
+export default async function Home() {
   const data = await prisma.todo.findMany({
     select: {
       title: true,
@@ -13,12 +13,6 @@ async function getData() {
       createdAt: "desc",
     },
   });
-
-  return data;
-}
-
-export default async function Home() {
-  const data = await getData();
   return (
     <div className=" w-screen py-20 flex justify-center flex-col items-center">
       <span className="text-4xl font-extrabold uppercase">Todo App</span>

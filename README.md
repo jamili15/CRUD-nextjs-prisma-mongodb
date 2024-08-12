@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-
-=======
-![Thumbnail Studio DEV (1)](https://github.com/oliver-gomes/todo-next-sactions/assets/32399333/1fac414b-07f5-4ac8-872a-903a22e01d08)
->>>>>>> c3d4e72ce8bdef959566733f3aad84dd1f9031e1
-
-
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -41,3 +34,11 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## install prisma
+
+// 1st todo is npm i prisma --save-dev
+// 2nd todo is npx prisma init --datasource-provider mongodb
+// ? optional npm install @prisma/client@latest
+// 3rd todo is npx prisma db push
+// 4th todo is npx prisma generate
