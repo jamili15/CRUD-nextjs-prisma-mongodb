@@ -1,6 +1,6 @@
 import AddTodo from "@/components/todos/AddTodo";
 import Todo from "@/components/todos/Todo";
-import { prisma } from "@/utils/prisma";
+import prisma from "@/lib/db";
 
 async function getData() {
   const data = await prisma.todo.findMany({
